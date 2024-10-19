@@ -1,0 +1,217 @@
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --special-font: Garamond, serif;
+    --secondary-font: Quicksand, sans-serif;
+
+    --gold-color: hsl(51, 100%, 35%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar Mobile */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem !important;
+}
+
+.navbar-brand img {
+    width: 4rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.offcanvas-title {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--gold-color) !important;
+}
+
+
+/* Navbar Desktop*/
+
+.navbar-desktop {
+    display: none;
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 4rem;
+}
+
+.navbar-desktop .navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-desktop .navbar-logo img {
+    width: 3.5rem;
+}
+
+.navbar-desktop .navbar-logo h1 {
+    font-family: var(--special-font);
+    font-size: 1.8rem;
+    justify-content: flex-end;
+}
+
+.navbar-desktop .navbar-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar-desktop .navbar-links a {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+  
+.navbar-links a:hover {
+    color: var(--gold-color); 
+    transform: scale(1.1);
+    letter-spacing: 1px; 
+}
+  
+.navbar-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--gold-color);
+    transition: width 0.3s ease;
+}
+  
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--gold-color);
+    color: #ffffff !important;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.btn-primary:hover {
+    background-color: #000;
+    color: var(--gold-color) !important;
+}
+  
+
+/* Banner */
+
+.banner {
+    height: calc(100vh - 77px); 
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000 !important;
+    transform: translate(-30%, -70%);
+}
+
+.carousel-caption h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: var(--special-font);
+    margin-bottom: 1rem;
+    text-justify: none;
+}
+
+.carousel-caption .special-text {
+    color: var(--gold-color);
+}
+
+.carousel-caption .btn {
+    background-color: var(--gold-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #000;
+    color: var(--gold-color);
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que as imagens cubram a área sem distorcer */
+}
+
+
+
+@media (min-width: 801px) {
+    .navbar-mobile {
+      display: none !important; 
+    }
+
+    .navbar-desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-desktop .navbar-logo h1 {
+        font-size: 1.6rem;
+    }
+
+
+    .navbar-desktop .navbar-links {
+      gap: 1rem;
+    }
+
+    .navbar-desktop .navbar-links a {
+      font-size: 0.9rem;
+    }
+  }
+  
