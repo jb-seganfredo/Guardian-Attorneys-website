@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--main-font);
 }
 
 
@@ -210,6 +211,60 @@
     object-fit: cover;
 }
 
+/* Propaganda */
+
+.propaganda {
+    background-color: var(--dark-blue);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propaganda .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.propaganda h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: var(--special-font);
+    margin-bottom: 1rem;
+}
+
+.propaganda a {
+    background-color: var(--gold-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.propaganda a:hover {
+    background-color: #000;
+    color: var(--gold-color);
+}
+
+.propaganda a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--gold-color);
+    transition: width 0.3s ease;
+}
+
+.propaganda a:hover::after {
+    width: 100%;
+}
+
+/* Media Query */
 
 @media (min-width: 801px) {
     .navbar-mobile {
