@@ -4,6 +4,7 @@
     --secondary-font: Quicksand, sans-serif;
 
     --gold-color: hsl(51, 100%, 35%);
+    --dark-blue: #1E2E45;
 }
 
 * {
@@ -188,6 +189,26 @@
     object-fit: cover; /* Para garantir que as imagens cubram a área sem distorcer */
 }
 
+
+
+
+
+/* About */
+
+
+
+/* Services */
+
+.services .card {
+    display: flex;
+    align-items: center;
+}
+
+.services img {
+    width: 3rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
 
 
 @media (min-width: 801px) {
