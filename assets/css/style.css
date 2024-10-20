@@ -264,6 +264,14 @@
     width: 100%;
 }
 
+/* Footer */
+
+footer a {
+    text-decoration: none; 
+    border: none; 
+}
+
+
 /* Media Query */
 
 @media (min-width: 801px) {
